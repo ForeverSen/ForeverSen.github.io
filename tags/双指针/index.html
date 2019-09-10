@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: sort, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
-    <meta name="description" content="分类: sort | 森森的博客">
+    <meta name="keywords" content="标签: 双指针, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
+    <meta name="description" content="标签: 双指针 | 森森的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类: sort | 森森的博客</title>
+    <title>标签: 双指针 | 森森的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -269,33 +269,76 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     
 
-<div id="category-cloud" class="container chip-container">
+<div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
+                <i class="fa fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
                 
                 
-                
-                <a href="/categories/sort/" title="sort: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F9EBEA;">sort
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/BinarySearch/" title="BinarySearch: 1">
+                <a href="/tags/BinarySearch/" title="BinarySearch: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">BinarySearch
+                            data-tagname="BinarySearch" style="background-color: #F9EBEA;">BinarySearch
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
+                
+                <a href="/tags/双指针/" title="双指针: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="双指针" style="background-color: #F5EEF8;">双指针
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Sort/" title="Sort: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Sort" style="background-color: #D5F5E3;">Sort
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/栈和队列/" title="栈和队列: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="栈和队列" style="background-color: #E8F8F5;">栈和队列
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/BFS-DFS/" title="BFS&DFS: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="BFS&DFS" style="background-color: #FEF9E7;">BFS&DFS
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/贪心/" title="贪心: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="贪心" style="background-color: #F8F9F9;">贪心
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/链表/" title="链表: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="链表" style="background-color: #82E0AA;">链表
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
@@ -307,51 +350,35 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     <article id="articles" class="container articles">
         <div class="row tags-posts">
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="双指针" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2019/08/07/pai-xu/">
+                    <a href="/2019/03/20/shuang-zhi-zhen/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="LeetCode中常见的堆排序">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="LeetCode中常见的双指针题目">
                             
-                            <span class="card-title">LeetCode中常见的堆排序</span>
+                            <span class="card-title">LeetCode中常见的双指针题目</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                堆排序今天在刷leetcode215题，碰到求解 TopK Elements问题，一共有三种方法，总结一下：
-题目描述：找到未排序数组中的第k个最大元素。请注意，它是排序顺序中的第k个最大元素，而不是第k个不同元素。
-Input: [3,2
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-20
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/sort/" class="post-category" target="_blank">
-                                    sort
+                                <a href="/categories/LeetCode/" class="post-category" target="_blank">
+                                LeetCode
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/LeetCode/" target="_blank">
-                            <span class="chip bg-color">LeetCode</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
@@ -369,7 +396,7 @@ Input: [3,2
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.5k</span>&nbsp;字
+                class="white-color">12.9k</span>&nbsp;字
             
             
             
@@ -391,7 +418,7 @@ Input: [3,2
                 var now = new Date();
 
                 function createtime() {
-                    var grt = new Date("06/28/2019 00:00:00");
+                    var grt = new Date("03/02/2019 00:00:00");
                     now.setTime(now.getTime() + 250);
                     days = (now - grt) / 1000 / 60 / 60 / 24;
                     dnum = Math.floor(days);
