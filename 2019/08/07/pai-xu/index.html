@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
-    <meta name="description" content="title: LeetCode中常见的堆排序
-date: 2019-08-07 09:25:08
-categories: sort
-tags: LeetCode
-堆排序今天在刷leetcode215题，碰到求解 TopK Elements问">
+    <meta name="keywords" content="LeetCode中常见的堆排序, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
+    <meta name="description" content="堆排序今天在刷leetcode215题，碰到求解 TopK Elements问题，一共有三种方法，总结一下：
+题目描述：找到未排序数组中的第k个最大元素。请注意，它是排序顺序中的第k个最大元素，而不是第k个不同元素。
+Input: [3,2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@ tags: LeetCode
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>森森的博客</title>
+    <title>LeetCode中常见的堆排序 | 森森的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -247,13 +245,13 @@ tags: LeetCode
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        
+                        LeetCode中常见的堆排序
                     </div>
                 </div>
             </div>
@@ -362,12 +360,25 @@ tags: LeetCode
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/LeetCode/" target="_blank">
+                                <span class="chip bg-color">LeetCode</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/sort/" class="post-category" target="_blank">
+                                sort
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -375,7 +386,7 @@ tags: LeetCode
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-06
+                    2019-08-07
                 </div>
 
                 
@@ -405,11 +416,7 @@ tags: LeetCode
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> LeetCode中常见的堆排序
-<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2019-08-07 09:25:08</span>
-<span class="token key atrule">categories</span><span class="token punctuation">:</span> sort
-<span class="token key atrule">tags</span><span class="token punctuation">:</span> LeetCode</code></pre>
-<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>今天在刷<a href="https://leetcode.com/problems/kth-largest-element-in-an-array/description/" target="_blank" rel="noopener">leetcode215题</a>，碰到求解 <strong>TopK Elements</strong>问题<strong>，</strong>一共有三种方法，总结一下：</p>
+                <h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>今天在刷<a href="https://leetcode.com/problems/kth-largest-element-in-an-array/description/" target="_blank" rel="noopener">leetcode215题</a>，碰到求解 <strong>TopK Elements</strong>问题<strong>，</strong>一共有三种方法，总结一下：</p>
 <h3 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h3><p>找到未排序数组中的第<strong>k</strong>个最大元素。请注意，它是排序顺序中的第k个最大元素，而不是第k个不同元素。</p>
 <pre class=" language-java"><code class="language-java">Input<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span> and k <span class="token operator">=</span> <span class="token number">2</span>  Output<span class="token operator">:</span> <span class="token number">5</span>
 Input<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>   and k <span class="token operator">=</span> <span class="token number">4</span>  Output<span class="token operator">:</span> <span class="token number">4</span></code></pre>
@@ -707,9 +714,9 @@ Output: [0,0,1,1,2,2]</code></pre><h3 id="解决方法：-1"><a href="#解决方
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《》
+                    《LeetCode中常见的堆排序》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/06/pai-xu/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/07/pai-xu/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ForeverSen
             </a> 采用
@@ -754,38 +761,48 @@ Output: [0,0,1,1,2,2]</code></pre><h3 id="解决方法：-1"><a href="#解决方
                 <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2019/09/06/pai-xu/">
+                <a href="/2019/08/07/pai-xu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="LeetCode中常见的堆排序">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">LeetCode中常见的堆排序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            title: LeetCode中常见的堆排序
-date: 2019-08-07 09:25:08
-categories: sort
-tags: LeetCode
-堆排序今天在刷leetcode215题，碰到求解 TopK Elements问
+                            堆排序今天在刷leetcode215题，碰到求解 TopK Elements问题，一共有三种方法，总结一下：
+题目描述：找到未排序数组中的第k个最大元素。请注意，它是排序顺序中的第k个最大元素，而不是第k个不同元素。
+Input: [3,2
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            ForeverSen
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/sort/" class="post-category" target="_blank">
+                                    sort
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/LeetCode/" target="_blank">
+                        <span class="chip bg-color">LeetCode</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -796,13 +813,13 @@ tags: LeetCode
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/06/er-fen-cha-zhao/">
+                <a href="/2019/08/06/er-fen-cha-zhao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="LeetCode中的二分查找">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">LeetCode中的二分查找</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,15 +831,27 @@ tags: LeetCode
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-06
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            ForeverSen
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/BinarySearch/" class="post-category" target="_blank">
+                                    BinarySearch
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/LeetCode/" target="_blank">
+                        <span class="chip bg-color">LeetCode</span>
+                    </a>
+                    
                 </div>
                 
             </div>
