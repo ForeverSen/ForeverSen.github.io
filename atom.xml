@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>森森的博客</title>
+  <icon>https://www.gravatar.com/avatar/04f2be9b09e0ae986b3e7156084874b6</icon>
+  <subtitle>乐观阳光，爱好运动</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
+  <updated>2019-09-06T15:06:00.283Z</updated>
+  <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
+  
+  <author>
+    <name>ForeverSen</name>
+    <email>13247550191@163.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/er-fen-cha-zhao/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/er-fen-cha-zhao/</id>
+    <published>2019-09-06T06:27:01.138Z</published>
+    <updated>2019-09-06T15:06:00.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;
+title: 二分查找
+date: 2019-05-26 14：43：05 
+categories: 人生  
+tags: [Java,LeetCode]
+
+#
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/hello-world/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/hello-world/</id>
+    <published>2019-09-06T05:34:41.592Z</published>
+    <updated>2019-09-06T05:34:41.592Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
