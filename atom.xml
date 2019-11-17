@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
-  <updated>2019-09-30T14:33:44.251Z</updated>
+  <updated>2019-11-17T09:44:20.180Z</updated>
   <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>菜鸡秋招有感</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/10/10/cai-ji-qiu-zhao-you-gan-bu-xi-wu-pen/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/10/10/cai-ji-qiu-zhao-you-gan-bu-xi-wu-pen/</id>
+    <published>2019-10-10T10:25:08.000Z</published>
+    <updated>2019-11-17T09:44:20.180Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿&lt;/p&gt;
+&lt;p&gt;广州二本秋招之路，Java后台方向&lt;/p&gt;
+&lt;p&gt;说说这两个多月的感受吧，纯属个人总结贴，不喜勿喷哈，今天算是想结束秋招了，一路走来，真的很多感概，不知道从何说起，很幸运的是拿到了一个小公司的offer，base深圳，方向和待遇还可以，这算是对我这个二本菜
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂记" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="杂记" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指Offer（40-49Java语言描述）</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/09/28/jian-zhi-offer-40-49/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/09/28/jian-zhi-offer-40-49/</id>
+    <published>2019-09-28T10:25:08.000Z</published>
+    <updated>2019-11-17T09:41:20.168Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿不知不觉已经快十月份了，还剩不多啦，最近也是一直跑宣讲会，笔试，面试，没有什么时间去刷题。&lt;/p&gt;
+&lt;h4 id=&quot;40-数组中出现次数超过一半的数字&quot;&gt;&lt;a href=&quot;#40-数组中出现次数超过一半的数字&quot; class=&quot;headerlink&quot; title=&quot;40.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="剑指Offer" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E5%89%91%E6%8C%87Offer/"/>
+    
+    
+      <category term="剑指Offer" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E5%89%91%E6%8C%87Offer/"/>
+    
+  </entry>
   
   <entry>
     <title>常见排序代码总结(Java语言实现)</title>
@@ -525,59 +582,6 @@
     
     
       <category term="设计模式" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode中的数学问题</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/05/08/leetcode-zhong-shu-xue-wen-ti/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/05/08/leetcode-zhong-shu-xue-wen-ti/</id>
-    <published>2019-05-08T10:25:08.000Z</published>
-    <updated>2019-09-30T13:52:45.998Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿对LeetCode中的有关数学问题进行了刷题总结：&lt;/p&gt;
-&lt;h4 id=&quot;素数：&quot;&gt;&lt;a href=&quot;#素数：&quot; class=&quot;headerlink&quot; title=&quot;素数：&quot;&gt;&lt;/a&gt;素数：&lt;/h4&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/LeetCode/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode中BFS&amp;DFS</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/05/02/bfs/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/05/02/bfs/</id>
-    <published>2019-05-02T10:25:08.000Z</published>
-    <updated>2019-09-10T09:52:30.929Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;深度优先遍历DFS：&quot;&gt;&lt;a href=&quot;#深度优先遍历DFS：&quot; class=&quot;headerlink&quot; title=&quot;深度优先遍历DFS：&quot;&gt;&lt;/a&gt;深度优先遍历DFS：&lt;/h3&gt;&lt;p&gt;  
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/LeetCode/"/>
-    
-    
-      <category term="BFS&amp;DFS" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/BFS-DFS/"/>
     
   </entry>
   
