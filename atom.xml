@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
-  <updated>2019-11-17T09:44:20.180Z</updated>
+  <updated>2019-11-17T09:52:25.696Z</updated>
   <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019.10月总结</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/11/01/2019.10-yue-zong-jie/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/11/01/2019.10-yue-zong-jie/</id>
+    <published>2019-11-01T10:25:08.000Z</published>
+    <updated>2019-11-17T09:52:25.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿&lt;/p&gt;
+&lt;p&gt;转眼已经11月份了，写下最近学到的一些知识以及这个月需要学习的知识，虽然出来实习后时间可能比较少，写博客的频率比较低，但是一个月还是必须要总结一下的：&lt;/p&gt;
+&lt;h4 id=&quot;1-DO、DTO、VO、POJO的区别&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>菜鸡秋招有感</title>
@@ -105,7 +134,7 @@
     <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/jian-zhi-offer-30-39/"/>
     <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/09/06/jian-zhi-offer-30-39/</id>
     <published>2019-09-06T10:25:08.000Z</published>
-    <updated>2019-09-30T14:32:46.566Z</updated>
+    <updated>2019-11-17T09:44:43.158Z</updated>
     
     <summary type="html">
     
@@ -555,33 +584,6 @@
     
     
       <category term="操作系统" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>23种设计模式</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/05/12/23-chong-she-ji-mo-shi-quan/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/05/12/23-chong-she-ji-mo-shi-quan/</id>
-    <published>2019-05-12T10:25:08.000Z</published>
-    <updated>2019-09-30T13:56:45.793Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿初学设计模式，建议可以参考&lt;a href=&quot;http://www.runoob.com/design-pattern/design-pattern-tutorial.html&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="计算机基础" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="设计模式" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   

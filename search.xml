@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2019.10月总结</title>
+      <link href="/2019/11/01/2019.10-yue-zong-jie/"/>
+      <url>/2019/11/01/2019.10-yue-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p>﻿</p><p>转眼已经11月份了，写下最近学到的一些知识以及这个月需要学习的知识，虽然出来实习后时间可能比较少，写博客的频率比较低，但是一个月还是必须要总结一下的：</p><h4 id="1-DO、DTO、VO、POJO的区别"><a href="#1-DO、DTO、VO、POJO的区别" class="headerlink" title="1. DO、DTO、VO、POJO的区别"></a>1. DO、DTO、VO、POJO的区别</h4><p>参考阿里巴巴代码规范：</p><ul><li>DO（ Data Object）：与数据库表结构一一对应，通过DAO层向上传输数据源对象。</li><li>DTO（ Data Transfer Object）：数据传输对象，Service或Manager向外传输的对象。</li><li>BO（ Business Object）：业务对象。 由Service层输出的封装业务逻辑的对象。</li><li>VO（ View Object）：显示层对象，通常是Web向模板渲染引擎层传输的对象。</li><li>POJO（ Plain Ordinary Java Object）：在本手册中， POJO专指只有setter/getter/toString的简单类，包括DO/DTO/BO/VO等。</li><li>Query：数据查询对象，各层接收上层的查询请求。 注意超过2个参数的查询封装，禁止使用Map类来传输。</li></ul><p>领域模型命名规约：</p><ul><li>数据对象：xxxDO，xxx即为数据表名。</li><li>数据传输对象：xxxDTO，xxx为业务领域相关的名称。</li><li>展示对象：xxxVO，xxx一般为网页名称。</li><li>POJO是DO/DTO/BO/VO的统称，禁止命名成xxxPOJO。</li></ul><h4 id="2-代码规范"><a href="#2-代码规范" class="headerlink" title="2.代码规范"></a>2.代码规范</h4><p>代码一定要规范，这一点可以参考阿里巴巴代码规范，总结的还是很详细的，通读一遍，会收获许多，最近我也是一直嫌弃自己的代码怎么可以这么丑，而且无章可循，就比如说</p><ul><li>注释，一般接口、类、枚举类的属性、类属性、类方法这些都是需要注释的，不然不好维护；</li><li>能简洁就简洁，比如说能使用lambda表达式那种就使用那种，使人看起来很舒服；</li><li>避免踩坑，这里就要靠经验，比如说不要在ArrayList.foreach里面进行add和remove操作，会报异常，应该使用迭代器；</li><li>注意时间复杂度，SQL语句编写要规范。</li><li><a href="http://hawstein.com/2014/01/20/google-java-style/" target="_blank" rel="noopener">谷歌编码规范</a></li><li><a href="https://xwjie.github.io/rule/" target="_blank" rel="noopener">晓风轻技术小站</a></li></ul><h4 id="3-Git的学习"><a href="#3-Git的学习" class="headerlink" title="3.Git的学习"></a>3.Git的学习</h4><p>对于Git的学习还是实操比较好，可以参考<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">官方文档</a>。crison也跟我们培训了Git的常规使用以及原理；</p><ul><li><p>Git的分支操作其实就是基于链表来实现，链表切换分支可以达到O（1）的时间复杂度，切换分支时就把Head指针指向哪个分支；</p></li><li><p>Git不保存文件的内容，Git只存储变更记录。</p></li><li><p>git init –bare 跟 git init 的区别：<br>git init –bare 只是new 一个裸露的.git文件，不能编辑文件的内容，只有.git文件<br>git init 的话除了有.git文件外，还可以记录文件内容</p></li><li><p>Git的远程仓库也可以在本地，不一定只在远端；</p></li><li><p>.git文件包含以下内容：<br><img src="https://img-blog.csdnimg.cn/20191102120333877.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h4 id="4-中台战略思想"><a href="#4-中台战略思想" class="headerlink" title="4.中台战略思想"></a>4.中台战略思想</h4><p>我个人理解的中台就是说把一些公共的东西抽取出来，不要做重复的东西。大中台，小前台，简便开发。<br>可以参考以下文章：<br><a href="https://zhuanlan.zhihu.com/p/30340662" target="_blank" rel="noopener">阿里中台思想</a><br><a href="https://insights.thoughtworks.cn/what-is-zhongtai/" target="_blank" rel="noopener">ThoughtWorks洞见</a></p></li></ul><h4 id="5-Mybatis-Plus-的常规使用"><a href="#5-Mybatis-Plus-的常规使用" class="headerlink" title="5. Mybatis-Plus 的常规使用"></a>5. Mybatis-Plus 的常规使用</h4><p>最近由于业务驱动，持久层的框架是Mybatis-Plus，花一波时间再去好好了解以下，真的，<a href="https://mp.baomidou.com/guide/" target="_blank" rel="noopener">官方文档</a>就足够，学什么都是如此，可以站在巨人的肩膀上学习。</p><p>使用这些主要是进行单表的简单操作，其中还包含一些lambda表达式。使用lambdaQuery相对更好一点，不用硬编码，以后比较好维护。<br><img src="https://img-blog.csdnimg.cn/20191102142738777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h4 id="6-PostMan的使用"><a href="#6-PostMan的使用" class="headerlink" title="6. PostMan的使用"></a>6. PostMan的使用</h4><ul><li>适当建立工作区<br><img src="https://img-blog.csdnimg.cn/20191102164111573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li><li>建立收藏夹，以后方便进行测试<br><img src="https://img-blog.csdnimg.cn/20191102164042853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li><li>适当使用变量<br><img src="https://img-blog.csdnimg.cn/20191102164258567.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这样在路径中就可以通过、和来获取值，这样显示的就很清楚。<br><img src="https://img-blog.csdnimg.cn/201911021643477.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li></ul><h4 id="7-其他"><a href="#7-其他" class="headerlink" title="7.其他"></a>7.其他</h4><p>BeanUtils.copyProperties是一个浅拷贝方法，复制属性时，我们只需要把DTO对象和要转化的对象两个的属性值设置为一样的名称，并且保证一样的类型就可以了。如果你在做DTO转化的时候一直使用set进行属性赋值，那么请尝试这种方式简化代码，让代码更加清晰!</p><ul><li>org.springframework.beans.BeanUtils.copyProperties(source, dest) 将source复制给dest</li><li>org.apache.commons.beanutils.BeanUtils.copyProperties(dest,source) 将dest赋值给source</li></ul><p><strong>对于以上两种最好写一个工具类来进行赋值，不然某天改代码的话会很麻烦。</strong></p><h4 id="TODO-List"><a href="#TODO-List" class="headerlink" title="TODO List"></a>TODO List</h4><ul><li>Docker（命令、原理、用途）</li><li>K8s（原理可参考文档）</li><li>Linux（一些不常用的命令也要会）</li><li>Java8（Lambda表达式）</li><li>Kafka</li></ul><p>路漫漫其修远兮，吾将上下而求索，感觉还是很多东西要学哈😂，师父领进门，修行还是得靠个人，有幸的是公司很多大牛可以教你，不懂就问，收获颇丰富。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>菜鸡秋招有感</title>
       <link href="/2019/10/10/cai-ji-qiu-zhao-you-gan-bu-xi-wu-pen/"/>
       <url>/2019/10/10/cai-ji-qiu-zhao-you-gan-bu-xi-wu-pen/</url>
