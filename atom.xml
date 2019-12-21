@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
-  <updated>2019-11-17T09:52:26.000Z</updated>
+  <updated>2019-12-21T05:49:21.037Z</updated>
   <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/12/19/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/12/19/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/</id>
+    <published>2019-12-19T15:44:16.664Z</published>
+    <updated>2019-12-21T05:49:21.037Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;title: SSH学习&lt;/p&gt;
+&lt;p&gt;date: 2019-12-16 18:25:08&lt;/p&gt;
+&lt;p&gt;categories: 计算机基础&lt;/p&gt;
+&lt;p&gt;autor: Zhan&lt;/p&gt;
+&lt;p&gt;tags:
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2019.11月总结</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/12/01/2019.11-yue-zong-jie/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/12/01/2019.11-yue-zong-jie/</id>
+    <published>2019-12-01T10:25:08.000Z</published>
+    <updated>2019-12-21T05:43:05.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;十一月，很快，已经实习一个多月了，感觉最近写的业务还是挺多的，也学习到了许多东西，平时自己遇到了困难也会在这里总结下，不过这个月偷懒了一把，没利用空余的时间去学习新的技术，不过最近开始看书了😂。&lt;/p&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读《高效能人士的七个习惯》</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/11/28/gao-xiao-neng-ren-shi-de-qi-ge-xi-guan-du-shu-bi-ji/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/11/28/gao-xiao-neng-ren-shi-de-qi-ge-xi-guan-du-shu-bi-ji/</id>
+    <published>2019-11-28T10:25:08.000Z</published>
+    <updated>2019-12-21T05:45:29.392Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;读《高效能人士的七个习惯》&quot;&gt;&lt;a href=&quot;#读《高效能人士的七个习惯》&quot; class=&quot;headerlink&quot; title=&quot;读《高效能人士的七个习惯》&quot;&gt;&lt;/a&gt;读《高效能人士的七个习惯》&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;最近读完了
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂记" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="杂记" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>2019.10月总结</title>
@@ -501,89 +584,6 @@
     
     
       <category term="计算机网络" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode中有关哈希表问题</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/06/02/leetcode-zhong-you-guan-ha-xi-biao-wen-ti/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/06/02/leetcode-zhong-you-guan-ha-xi-biao-wen-ti/</id>
-    <published>2019-06-02T10:25:08.000Z</published>
-    <updated>2019-09-30T14:10:20.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿对LeetCode中几道关于哈希表问题进行总结：&lt;/p&gt;
-&lt;h4 id=&quot;1-两数之和&quot;&gt;&lt;a href=&quot;#1-两数之和&quot; class=&quot;headerlink&quot; title=&quot;1.两数之和&quot;&gt;&lt;/a&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/LeetCode/"/>
-    
-    
-      <category term="哈希表" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>进程调度、同步、通信</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/05/21/ji-suan-ji-cao-zuo-xi-tong-xue-xi-er-jin-cheng-de-diao-du-tong-bu-tong-xin-si-suo/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/05/21/ji-suan-ji-cao-zuo-xi-tong-xue-xi-er-jin-cheng-de-diao-du-tong-bu-tong-xin-si-suo/</id>
-    <published>2019-05-21T10:25:08.000Z</published>
-    <updated>2019-09-30T13:59:14.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;进程的调度、同步、通信&quot;&gt;&lt;a href=&quot;#进程的调度、同步、通信&quot; class=&quot;headerlink&quot; title=&quot;进程的调度、同步、通信&quot;&gt;&lt;/a&gt;进程的调度、同步、通信&lt;/h4&gt;&lt;h5 id=&quot;进程的组成&quot;&gt;&lt;a href=&quot;#进程的组成&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="计算机基础" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="操作系统" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统基本概念</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/05/16/ji-suan-ji-cao-zuo-xi-tong-xue-xi-yi-cao-zuo-xi-tong-ji-ben-gai-nian/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/05/16/ji-suan-ji-cao-zuo-xi-tong-xue-xi-yi-cao-zuo-xi-tong-ji-ben-gai-nian/</id>
-    <published>2019-05-16T10:25:08.000Z</published>
-    <updated>2019-09-30T13:58:32.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿### 概念、特征、系统调用、中断&lt;/p&gt;
-&lt;h4 id=&quot;操作系统基本概念&quot;&gt;&lt;a href=&quot;#操作系统基本概念&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="计算机基础" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="操作系统" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
