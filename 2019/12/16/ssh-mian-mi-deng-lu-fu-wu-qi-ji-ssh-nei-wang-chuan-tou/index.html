@@ -4,9 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="2019.11月总结, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
-    <meta name="description" content="十一月，很快，已经实习一个多月了，感觉最近写的业务还是挺多的，也学习到了许多东西，平时自己遇到了困难也会在这里总结下，不过这个月偷懒了一把，没利用空余的时间去学习新的技术，不过最近开始看书了😂。
-1. Spring中@RequestPar">
+    <meta name="keywords" content="SSH学习, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
+    <meta name="description" content="SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：
+1.SSH目录├── authorized_keys        --服务器的已授权秘钥信息
+├── config                          ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>2019.11月总结 | 森森的博客</title>
+    <title>SSH学习 | 森森的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -244,13 +245,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        2019.11月总结
+                        SSH学习
                     </div>
                 </div>
             </div>
@@ -361,8 +362,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/" target="_blank">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/Linux/" target="_blank">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
                     </div>
@@ -373,8 +374,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category" target="_blank">
-                                Java
+                            <a href="/categories/计算机基础/" class="post-category" target="_blank">
+                                计算机基础
                             </a>
                         
                     </div>
@@ -385,21 +386,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-01
+                    2019-12-16
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.9k
+                        1.4k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        5 分
                     </div>
                     
                 
@@ -415,91 +416,68 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>十一月，很快，已经实习一个多月了，感觉最近写的业务还是挺多的，也学习到了许多东西，平时自己遇到了困难也会在这里总结下，不过这个月偷懒了一把，没利用空余的时间去学习新的技术，不过最近开始看书了😂。</p>
-<h4 id="1-Spring中-RequestParam和-RequestBody区别"><a href="#1-Spring中-RequestParam和-RequestBody区别" class="headerlink" title="1. Spring中@RequestParam和@RequestBody区别"></a>1. Spring中@RequestParam和@RequestBody区别</h4><p>注解@RequestParam接收的参数是来自requestHeader中，即请求头。通常用于GET请求，像POST、DELETE等其它类型的请求也可以使用。@RequestParam用来处理 Content-Type 为 application/x-www-form-urlencoded 编码的内容，Content-Type默认为该属性。</p>
-<p>@RequestParam有三个配置参数：</p>
+                <p>SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：</p>
+<h4 id="1-SSH目录"><a href="#1-SSH目录" class="headerlink" title="1.SSH目录"></a>1.SSH目录</h4><pre class=" language-shell"><code class="language-shell">├── authorized_keys        --服务器的已授权秘钥信息
+├── config                            --本地配置
+├── id_rsa                            --私钥
+├── id_rsa.pub                    --公钥
+└── known_hosts                --已知认证的主机足迹</code></pre>
+<p>如果本机没有ssh目录的话，可以自己生成下：</p>
+<pre class=" language-shell"><code class="language-shell">ssh-keygen -t rsa -C "zhan@zhitao.com"</code></pre>
+<p>然后三个回车就可以了。</p>
+<h4 id="2-通过终端查看-SSH-远程登录是否已经开启"><a href="#2-通过终端查看-SSH-远程登录是否已经开启" class="headerlink" title="2.通过终端查看 SSH 远程登录是否已经开启"></a>2.通过终端查看 SSH 远程登录是否已经开启</h4><p>　　想要查看 Mac 上 SSH 的当前状态？使用简单的终端就可以检查 SSH 和远程登录目前是否已经开启：</p>
+<pre class=" language-shell"><code class="language-shell">sudo systemsetup -getremotelogin</code></pre>
+<p>　　如果已经开启的话，指令会显示 “Remote Login: On” ，反之就会显示“Remote Login: Off”。</p>
+<p>　　通过终端指令开启Mac的SSH</p>
+<p>　　要快速开启 SSH 服务器并允许 SSH 连接进入当前 Mac，使用下列指令：</p>
+<pre class=" language-shell"><code class="language-shell">　sudo systemsetup -setremotelogin on　</code></pre>
+<p>　　输入指令后并没有任何确认信息表明远程登录和 SSH 已经开启，但你可以使用上文提到的方法来检查是否开启成功。</p>
+<p>　　通过终端指令关闭Mac的SSH</p>
+<p>　　如果你想通过终端指令禁用 SSH 服务器并阻止远程连接，输入下列指令：</p>
+<pre class=" language-shell"><code class="language-shell">　sudo systemsetup -setremotelogin off　</code></pre>
+<h4 id="3-配置本地ssh免密登录服务器"><a href="#3-配置本地ssh免密登录服务器" class="headerlink" title="3.配置本地ssh免密登录服务器"></a>3.配置本地ssh免密登录服务器</h4><p>使用ssh 可以做到在本地免密登录服务器，很方便，可以参考<a href="https://zhuanlan.zhihu.com/p/28423720" target="_blank" rel="noopener">这篇文章</a> </p>
+<p>这个命令要熟悉，拷贝本地的公钥到服务器</p>
+<pre class=" language-shell"><code class="language-shell">ssh-copy-id  user@ip_address</code></pre>
+<p>另外本地也可以用别名代替用户和ip地址，具体的配置可以在 ~/.ssh/config中去配置，我这里配置了hw 和 ali 的。<br>因此在我本地使用 就可以登录了</p>
+<pre class=" language-shell"><code class="language-shell">ssh hw
+或者
+ssh ali  </code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20191211215757800.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>具体配置：</p>
+<pre class=" language-shell"><code class="language-shell">Host hw
+    hostname 你的ip
+    user 用户名
+    port 22
+    IdentityFile ~/.ssh/id_rsa</code></pre>
+<h4 id="4-SSH实现外网访问内网"><a href="#4-SSH实现外网访问内网" class="headerlink" title="4.SSH实现外网访问内网"></a>4.SSH实现外网访问内网</h4><p>这种方式的原理就是通过当前unix/linux客户端向服务器主动的建立一个SSL隧道，然后将服务器上的某个端口（这里我定义为8888）转发到当前客户端的22端口上，这样任何一台计算机包括服务器本身，都能使用服务器上开启的某个端口连接到当前的客户端上，我理解到的就是进行了端口转发，然后间接通过服务器来访问内网的机器。</p>
+<p><strong>1. 在本地机器输入以下命令 （建立隧道）</strong></p>
+<pre class=" language-shell"><code class="language-shell">ssh -p 22 -NR 8888:127.0.0.1:22 root@ip</code></pre>
+<p>在ssh文档中  -NR 的定义：</p>
 <ul>
-<li>required 表示是否必须，默认为 true，必须。</li>
-<li>defaultValue 可设置请求参数的默认值。</li>
-<li>value 为接收url的参数名（相当于key值）。</li>
+<li>-N<br>  不执行远程命令. 用于转发端口. (仅限协议第二版)    </li>
+<li>-R port:host:hostport<br>  将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口. 工作原理是这样的, 远程主机上分配了一个 socket 侦听 port 端口, 一旦这个端口上有了连接, 该连接就经过安全通道转向出去, 同时本地主机和 host 的 hostport 端口建立连接. 可以在配置文件中指定端口的转发. 只有用 root 登录远程主机 才能转发特权端口. IPv6 地址用另一种格式说明: port/host/hostport</li>
+<li>-g<br>  允许远端主机连接本地转发的端口.</li>
+<li>-f<br>  要求 在执行命令前退至后台. 它用于当 准备询问口令或密语, 但是用户希望它在后台进行. 该选项隐含了 -n 选项. 在远端机器上启动 X11 程序的推荐手法就是类似于 ssh -f host xterm 的命令.</li>
+<li>-q<br>  安静模式. 消除所有的警告和诊断信息</li>
+<li>-n：<br> 把 stdin 重定向到 /dev/null (实际上防止从 stdin 读取数据). 在后台运行时一定会用到这个选项. 它的常用技巧是远程运行 X11 程序. 例如, ssh -n shadows.cs.hut.fi emacs 将会在 shadows.cs.hut.fi 上启动 emacs, 同时自动在加密通道中转发 X11 连接. 在后台运行. (但是如果 要求口令或密语, 这种方式就无法工作; 参见 -f 选项.)</li>
 </ul>
-<p>注解@RequestBody接收的参数是来自requestBody中，即请求体。一般用于处理非 Content-Type: application/x-www-form-urlencoded编码格式的数据，比如：application/json、application/xml等类型的数据。通常用于接收POST、DELETE等类型的请求数据，GET类型也可以适用。</p>
-<h4 id="2-Array-asList"><a href="#2-Array-asList" class="headerlink" title="2.Array.asList()"></a>2.Array.asList()</h4><p>发现在开发中还是比较常见到Arrays.asList()的，我们可以使用它将一个数组转换为一个List集合。</p>
-<ul>
-<li><p>Arrays.asList()将数组转换为集合后,底层其实还是数组。</p>
+<p><strong>2. 然后可以登录自己的服务器，在自己的服务器上就可以通过以下命令：</strong></p>
+<pre class=" language-shell"><code class="language-shell">ssh  用户名@127.0.0.1 -8888</code></pre>
+<p>这里的用户名是你本地机器的用户名。</p>
+<p><strong>3. 如果是其他机器的话，就可以通过</strong></p>
+<pre class=" language-shell"><code class="language-shell">ssh  用户名@ip -8888</code></pre>
+<p>这里的用户名是服务器上的用户名，ip是服务器的ip。</p>
+<p>通过以上三个步骤就可以实现外网访问公司内网拉，不过要内网的机器一直开着，转发着端口。另外本地机器的ssh如果在一定时间内会停掉自动转发的请求，这个时候我们就需要安装autossh，来监控ssh转发请求，一直保持着这个请求。</p>
+<h4 id="5-SCP传输文件"><a href="#5-SCP传输文件" class="headerlink" title="5.SCP传输文件"></a>5.SCP传输文件</h4><p>在Linunx下使用SCP传输文件，也写在这里吧，反正工作或者以后学习会经常用到，把自己的文件传到服务器或者从服务器中拉文件下来。<br>先制定下规则：</p>
+<pre><code>fileLocal:本地文件位置
+fileRemote：服务器文件位置
+remoteIp：服务器ip</code></pre><ul>
+<li>上传到远端服务器<pre class=" language-shell"><code class="language-shell">scp fileLocal root@remoteIp:fileRemote</code></pre>
 </li>
-<li><p>使用时要注意：传递的数组必须是对象数组，而不是基本类型。Arrays.asList()是泛型方法，传入的对象必须是对象数组。</p>
-</li>
-<li><p>使用集合的修改方法:add()、remove()、clear()会抛出异常。Arrays.asList() 方法返回的并不是 java.util.ArrayList ，而是 java.util.Arrays 的一个内部类,这个内部类并没有实现集合的修改方法或者说并没有重写这些方法。</p>
-</li>
-<li><p>正确的将数组转换为ArrayList的方法：</p>
-</li>
+<li>从服务器上复制文件到本地<pre class=" language-shell"><code class="language-shell">scp root@remoteIp:fileRemote fileLocal</code></pre>
+另外如果设定了别名的话，就是跟ssh那里一样，可以使用别名代替root@remoteIp</li>
 </ul>
-<ol>
-<li>直接转<pre class=" language-java"><code class="language-java">List list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-</li>
-<li>使用 Java8 的Stream:<pre class=" language-java"><code class="language-java">List myList <span class="token operator">=</span> Arrays<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">collect</span><span class="token punctuation">(</span>Collectors<span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-</li>
-</ol>
-<h4 id="3-数据库表设计"><a href="#3-数据库表设计" class="headerlink" title="3. 数据库表设计"></a>3. 数据库表设计</h4><ul>
-<li>字段如果是字符的话，字符编码必须使用utf8-mb4，要统一，不然会报错。</li>
-<li>尽量不要以MySQL关键字作为字段的命名，<a href="https://www.docs4dev.com/docs/zh/mysql/5.7/reference/keywords.html#%E5%85%B3%E9%94%AE%E8%AF%8D%E5%92%8C%E4%BF%9D%E7%95%99%E5%AD%97" target="_blank" rel="noopener">可参考官方文档</a>，不然做查询语句的时候会出错。</li>
-<li>每个数据表必须存在主键,除特殊情况外,应使用自增主键。</li>
-<li>除特殊情况外,所有字段必须设定默认值并且一定不可以出现NULL类型。</li>
-</ul>
-<h4 id="4-resultType和resultMap区别"><a href="#4-resultType和resultMap区别" class="headerlink" title="4.resultType和resultMap区别"></a>4.resultType和resultMap区别</h4><p><a href="https://mybatis.org/mybatis-3/zh/" target="_blank" rel="noopener">官方文档</a></p>
-<ul>
-<li>resultType    从这条语句中返回的期望类型的类的完全限定名或别名。 注意如果返回的是集合，那应该设置为集合包含的类型，而不是集合本身。可以使用 resultType 或 resultMap，但不能同时使用。</li>
-<li>resultMap    外部 resultMap 的命名引用。<strong>结果集的映射是 MyBatis 最强大的特性</strong>，如果你对其理解透彻，许多复杂映射的情形都能迎刃而解。可以使用 resultMap 或 resultType，但不能同时使用。</li>
-</ul>
-<h4 id="5-Spring中的事务机制"><a href="#5-Spring中的事务机制" class="headerlink" title="5.Spring中的事务机制"></a>5.Spring中的事务机制</h4><p><strong>1、 Spring中事务的传播行为：</strong></p>
-<p>事务的传播行为是指，如果在开始当前事务之前，一个事务上下文已经存在，此时有若干选项可以指定一个事务性方法的执行行为。在TransactionDefinition定义中包括了如下几个表示传播行为的常量：</p>
-<ul>
-<li>TransactionDefinition.PROPAGATION_REQUIRED：如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。</li>
-<li>TransactionDefinition.PROPAGATION_REQUIRES_NEW：创建一个新的事务，如果当前存在事务，则把当前事务挂起。</li>
-<li>TransactionDefinition.PROPAGATION_SUPPORTS：如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。</li>
-<li>TransactionDefinition.PROPAGATION_NOT_SUPPORTED：以非事务方式运行，如果当前存在事务，则把当前事务挂起。</li>
-<li>TransactionDefinition.PROPAGATION_NEVER：以非事务方式运行，如果当前存在事务，则抛出异常。</li>
-<li>TransactionDefinition.PROPAGATION_MANDATORY：如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。</li>
-<li>TransactionDefinition.PROPAGATION_NESTED：如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于TransactionDefinition.PROPAGATION_REQUIRED。</li>
-</ul>
-<p><strong>2、Spring事务种类</strong>：<br>Spring中的事务一般分为编程式事务和声明式事务，由于编程式事务比较复杂，一般我们在项目中都是使用声明式事务，也比较方便，而声明式事务也有很多种类型来定义。<br><a href="https://www.ibm.com/developerworks/cn/education/opensource/os-cn-spring-trans/index.html" target="_blank" rel="noopener">全面分析 Spring 的编程式事务管理及声明式事务管理</a></p>
-<ul>
-<li><p><strong>一种是在配置文件（xml）中做相关的事务规则声明</strong></p>
-</li>
-<li><p><strong>还有就是基于 @Transactional 的声明式事务管理</strong><br>虽然 @Transactional 注解可以作用于接口、接口方法、类以及类方法上，但是 Spring 小组建议不要在接口或者接口方法上使用该注解，因为这只有在使用基于接口的代理时它才会生效。另外， @Transactional 注解应该只被应用到 public 方法上，这是由 Spring AOP 的本质决定的。如果你在 protected、private 或者默认可见性的方法上使用 @Transactional 注解，这将被忽略，也不会抛出任何异常。<br>还有就是<strong>Spring 的 AOP 的自调用问题会导致 就算出现异常也不会回滚，需要注意！</strong><br>自调用问题就是说：同一个类中一个方法调用另一个方法有事务的方法，事务是不会起作用的。<br><a href="https://blog.csdn.net/dream_broken/article/details/72911148" target="_blank" rel="noopener">自调用问题</a><br><a href="https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html" target="_blank" rel="noopener">透彻的掌握 Spring 中@transactional 的使用</a></p>
-</li>
-</ul>
-<h4 id="6-Charles工具的使用"><a href="#6-Charles工具的使用" class="headerlink" title="6.Charles工具的使用"></a>6.Charles工具的使用</h4><p>工欲善其事，必先利其器，好的工具让你开发效率倍增。这款工具比起wireshark好用多了，也可以用来看手机APP的接口（要手机跟电脑连接同一网段）。</p>
-<ul>
-<li>截取 Http 和 Https 网络封包。</li>
-<li>支持重发网络请求，方便后端调试。</li>
-<li>支持修改网络请求参数。</li>
-<li>支持网络请求的截获并动态修改。</li>
-<li>支持模拟慢速网络。</li>
-</ul>
-<p>其中使用Map也可以将远程地址的接口转发到本地，比如可以将测试环境或者生产环境的地址转发到本地的地址，这个时候本地也要有一份跟测试环境一样的数据库，然后当你在线上操作测试环境时，实际上操作的就是你本地的数据库。功能强大。还有一些Rewirte 和 Breakpoints 功能等，具体可以参考<a href="https://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="noopener">Charles 从入门到精通</a>。<br><img src="https://img-blog.csdnimg.cn/20191126114502227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h4 id="7-Java8新特性"><a href="#7-Java8新特性" class="headerlink" title="7.Java8新特性"></a>7.Java8新特性</h4><p>Java8的新特性，真的给开发者带来了福音，在开发中也很实用，尤其是流Stream，Optional判断空指针异常等，LocalDateTime代替Date，总的来说新特性有以下几个：<br>这里只做总结：不做具体功能，详情可以参考相关博客，JavaGuide博主总结的太好了哈哈哈<a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/What%27s%20New%20in%20JDK8/Java8Tutorial.md">详解Java8</a></p>
-<ul>
-<li>Lambda表达式</li>
-<li>接口的默认方法(使用 default 关键字向接口添加非抽象方法实现)</li>
-<li>方法引用（::）</li>
-<li>流Stream（filter、sort、map、collect、reduce、count）</li>
-<li>Optional（可预防空指针）</li>
-<li>LocalDateTime（以后尽量用这个代替Date）</li>
-</ul>
-<h4 id="8-JavaBean中用LocalDateTime-修饰-创建时间-报错"><a href="#8-JavaBean中用LocalDateTime-修饰-创建时间-报错" class="headerlink" title="8.JavaBean中用LocalDateTime 修饰 创建时间 报错"></a>8.JavaBean中用LocalDateTime 修饰 创建时间 报错</h4><p>谷歌了一下，是Mybatis-plus版本跟druid连接池版本冲突的问题，我曾创建一个新项目，其中用Mybatis-plus➕hikari 连接池，这样使用LocalDateTime修饰created_at就不会报错。</p>
-<p>之前项目中用到的Mybatis-plus ➕ druid 就会出现报错。<a href="https://github.com/baomidou/mybatis-plus/issues/1114">参考</a></p>
-<p>解决方法：</p>
-<ul>
-<li>1、使用Date类型修饰Bean</li>
-<li>2、换连接池，使用hikariCP</li>
-</ul>
-<h4 id="12月-TODO"><a href="#12月-TODO" class="headerlink" title="12月 TODO"></a>12月 TODO</h4><ol>
-<li>加强SQL语句的编写。</li>
-<li>对Redis的熟练应用。</li>
-<li>看一本书。</li>
-</ol>
+<p>上面都是针对单个文件的，如果需要传输整个文件夹的话，需要用<strong>scp -r</strong></p>
+<p>另外使用scp要注意所使用的用户是否具有可读取远程服务器相应文件的权限，如果没有权限，需要chmod 777 一下。</p>
 
             </div>
             <hr/>
@@ -658,9 +636,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《2019.11月总结》
+                    《SSH学习》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/01/2019.11-yue-zong-jie/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ForeverSen
             </a> 采用
@@ -700,9 +678,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/">
                     <div class="card-image">
@@ -722,9 +701,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -737,6 +716,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -755,32 +735,32 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/28/gao-xiao-neng-ren-shi-de-qi-ge-xi-guan-du-shu-bi-ji/">
+                <a href="/2019/12/01/2019.11-yue-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="读《高效能人士的七个习惯》">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="2019.11月总结">
                         
-                        <span class="card-title">读《高效能人士的七个习惯》</span>
+                        <span class="card-title">2019.11月总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            读《高效能人士的七个习惯》
-最近读完了 史蒂芬·科维的『高效能人士的七个习惯』，对于初入职场的人来说，收获挺多，从中你可以在如今的生活中发现自己很多需要去提高的地方。希望能好好践行这七个习惯，对生活还有工作会很有帮助。是本经典好书。简单讲下
+                            十一月，很快，已经实习一个多月了，感觉最近写的业务还是挺多的，也学习到了许多东西，平时自己遇到了困难也会在这里总结下，不过这个月偷懒了一把，没利用空余的时间去学习新的技术，不过最近开始看书了😂。
+1. Spring中@RequestPar
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-28
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/杂记/" class="post-category" target="_blank">
-                                    杂记
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
                                 </a>
                             
                             
@@ -790,8 +770,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/杂记/" target="_blank">
-                        <span class="chip bg-color">杂记</span>
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>

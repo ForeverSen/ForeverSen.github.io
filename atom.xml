@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
-  <updated>2019-12-21T05:49:21.037Z</updated>
+  <updated>2019-12-21T05:59:39.659Z</updated>
   <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/12/19/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/12/19/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/</id>
-    <published>2019-12-19T15:44:16.664Z</published>
-    <updated>2019-12-21T05:49:21.037Z</updated>
+    <title>SSH学习</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/</id>
+    <published>2019-12-16T10:25:08.000Z</published>
+    <updated>2019-12-21T05:59:39.659Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,18 @@
       
         
         
-          &lt;p&gt;title: SSH学习&lt;/p&gt;
-&lt;p&gt;date: 2019-12-16 18:25:08&lt;/p&gt;
-&lt;p&gt;categories: 计算机基础&lt;/p&gt;
-&lt;p&gt;autor: Zhan&lt;/p&gt;
-&lt;p&gt;tags:
+          &lt;p&gt;SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：&lt;/p&gt;
+&lt;h4 id=&quot;1-SSH目录&quot;&gt;&lt;a href=&quot;#1-SSH目录&quot; class=&quot;headerlink&quot; title=&quot;1.SSH目录&quot;&gt;&lt;/a&gt;1.SSH目录&lt;/h4&gt;&lt;pre
         
       
     
     </summary>
     
     
+      <category term="计算机基础" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/Linux/"/>
     
   </entry>
   
