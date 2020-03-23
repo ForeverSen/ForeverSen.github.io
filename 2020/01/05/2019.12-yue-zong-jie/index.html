@@ -4,10 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="SSH学习, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
-    <meta name="description" content="SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：
-1.SSH目录├── authorized_keys        --服务器的已授权秘钥信息
-├── config                          ">
+    <meta name="keywords" content="2019.12月总结, Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
+    <meta name="description" content="12月最后一个月，明天就是2020年了，回顾2019，感觉成长了许多，2020，希望能继续保持对技术的热情，做自己喜欢做的事，明年，也将毕业啦，从此便是社会人。🏷️
+1. JRebel实现热部署减少重启时间平时我们在开发中总是需要不断修改">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>SSH学习 | 森森的博客</title>
+    <title>2019.12月总结 | 森森的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -245,13 +244,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        SSH学习
+                        2019.12月总结
                     </div>
                 </div>
             </div>
@@ -362,8 +361,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/" target="_blank">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/Java/" target="_blank">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -374,8 +373,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/计算机基础/" class="post-category" target="_blank">
-                                计算机基础
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                Java
                             </a>
                         
                     </div>
@@ -386,21 +385,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-16
+                    2020-01-05
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.4k
+                        1.6k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        6 分
                     </div>
                     
                 
@@ -416,68 +415,92 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：</p>
-<h4 id="1-SSH目录"><a href="#1-SSH目录" class="headerlink" title="1.SSH目录"></a>1.SSH目录</h4><pre class=" language-shell"><code class="language-shell">├── authorized_keys        --服务器的已授权秘钥信息
-├── config                            --本地配置
-├── id_rsa                            --私钥
-├── id_rsa.pub                    --公钥
-└── known_hosts                --已知认证的主机足迹</code></pre>
-<p>如果本机没有ssh目录的话，可以自己生成下：</p>
-<pre class=" language-shell"><code class="language-shell">ssh-keygen -t rsa -C "zhan@zhitao.com"</code></pre>
-<p>然后三个回车就可以了。</p>
-<h4 id="2-通过终端查看-SSH-远程登录是否已经开启"><a href="#2-通过终端查看-SSH-远程登录是否已经开启" class="headerlink" title="2.通过终端查看 SSH 远程登录是否已经开启"></a>2.通过终端查看 SSH 远程登录是否已经开启</h4><p>　　想要查看 Mac 上 SSH 的当前状态？使用简单的终端就可以检查 SSH 和远程登录目前是否已经开启：</p>
-<pre class=" language-shell"><code class="language-shell">sudo systemsetup -getremotelogin</code></pre>
-<p>　　如果已经开启的话，指令会显示 “Remote Login: On” ，反之就会显示“Remote Login: Off”。</p>
-<p>　　通过终端指令开启Mac的SSH</p>
-<p>　　要快速开启 SSH 服务器并允许 SSH 连接进入当前 Mac，使用下列指令：</p>
-<pre class=" language-shell"><code class="language-shell">　sudo systemsetup -setremotelogin on　</code></pre>
-<p>　　输入指令后并没有任何确认信息表明远程登录和 SSH 已经开启，但你可以使用上文提到的方法来检查是否开启成功。</p>
-<p>　　通过终端指令关闭Mac的SSH</p>
-<p>　　如果你想通过终端指令禁用 SSH 服务器并阻止远程连接，输入下列指令：</p>
-<pre class=" language-shell"><code class="language-shell">　sudo systemsetup -setremotelogin off　</code></pre>
-<h4 id="3-配置本地ssh免密登录服务器"><a href="#3-配置本地ssh免密登录服务器" class="headerlink" title="3.配置本地ssh免密登录服务器"></a>3.配置本地ssh免密登录服务器</h4><p>使用ssh 可以做到在本地免密登录服务器，很方便，可以参考<a href="https://zhuanlan.zhihu.com/p/28423720" target="_blank" rel="noopener">这篇文章</a> </p>
-<p>这个命令要熟悉，拷贝本地的公钥到服务器</p>
-<pre class=" language-shell"><code class="language-shell">ssh-copy-id  user@ip_address</code></pre>
-<p>另外本地也可以用别名代替用户和ip地址，具体的配置可以在 ~/.ssh/config中去配置，我这里配置了hw 和 ali 的。<br>因此在我本地使用 就可以登录了</p>
-<pre class=" language-shell"><code class="language-shell">ssh hw
-或者
-ssh ali  </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191211215757800.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>具体配置：</p>
-<pre class=" language-shell"><code class="language-shell">Host hw
-    hostname 你的ip
-    user 用户名
-    port 22
-    IdentityFile ~/.ssh/id_rsa</code></pre>
-<h4 id="4-SSH实现外网访问内网"><a href="#4-SSH实现外网访问内网" class="headerlink" title="4.SSH实现外网访问内网"></a>4.SSH实现外网访问内网</h4><p>这种方式的原理就是通过当前unix/linux客户端向服务器主动的建立一个SSL隧道，然后将服务器上的某个端口（这里我定义为8888）转发到当前客户端的22端口上，这样任何一台计算机包括服务器本身，都能使用服务器上开启的某个端口连接到当前的客户端上，我理解到的就是进行了端口转发，然后间接通过服务器来访问内网的机器。</p>
-<p><strong>1. 在本地机器输入以下命令 （建立隧道）</strong></p>
-<pre class=" language-shell"><code class="language-shell">ssh -p 22 -NR 8888:127.0.0.1:22 root@ip</code></pre>
-<p>在ssh文档中  -NR 的定义：</p>
-<ul>
-<li>-N<br>  不执行远程命令. 用于转发端口. (仅限协议第二版)    </li>
-<li>-R port:host:hostport<br>  将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口. 工作原理是这样的, 远程主机上分配了一个 socket 侦听 port 端口, 一旦这个端口上有了连接, 该连接就经过安全通道转向出去, 同时本地主机和 host 的 hostport 端口建立连接. 可以在配置文件中指定端口的转发. 只有用 root 登录远程主机 才能转发特权端口. IPv6 地址用另一种格式说明: port/host/hostport</li>
-<li>-g<br>  允许远端主机连接本地转发的端口.</li>
-<li>-f<br>  要求 在执行命令前退至后台. 它用于当 准备询问口令或密语, 但是用户希望它在后台进行. 该选项隐含了 -n 选项. 在远端机器上启动 X11 程序的推荐手法就是类似于 ssh -f host xterm 的命令.</li>
-<li>-q<br>  安静模式. 消除所有的警告和诊断信息</li>
-<li>-n：<br> 把 stdin 重定向到 /dev/null (实际上防止从 stdin 读取数据). 在后台运行时一定会用到这个选项. 它的常用技巧是远程运行 X11 程序. 例如, ssh -n shadows.cs.hut.fi emacs 将会在 shadows.cs.hut.fi 上启动 emacs, 同时自动在加密通道中转发 X11 连接. 在后台运行. (但是如果 要求口令或密语, 这种方式就无法工作; 参见 -f 选项.)</li>
-</ul>
-<p><strong>2. 然后可以登录自己的服务器，在自己的服务器上就可以通过以下命令：</strong></p>
-<pre class=" language-shell"><code class="language-shell">ssh  用户名@127.0.0.1 -8888</code></pre>
-<p>这里的用户名是你本地机器的用户名。</p>
-<p><strong>3. 如果是其他机器的话，就可以通过</strong></p>
-<pre class=" language-shell"><code class="language-shell">ssh  用户名@ip -8888</code></pre>
-<p>这里的用户名是服务器上的用户名，ip是服务器的ip。</p>
-<p>通过以上三个步骤就可以实现外网访问公司内网拉，不过要内网的机器一直开着，转发着端口。另外本地机器的ssh如果在一定时间内会停掉自动转发的请求，这个时候我们就需要安装autossh，来监控ssh转发请求，一直保持着这个请求。</p>
-<h4 id="5-SCP传输文件"><a href="#5-SCP传输文件" class="headerlink" title="5.SCP传输文件"></a>5.SCP传输文件</h4><p>在Linunx下使用SCP传输文件，也写在这里吧，反正工作或者以后学习会经常用到，把自己的文件传到服务器或者从服务器中拉文件下来。<br>先制定下规则：</p>
-<pre><code>fileLocal:本地文件位置
-fileRemote：服务器文件位置
-remoteIp：服务器ip</code></pre><ul>
-<li>上传到远端服务器<pre class=" language-shell"><code class="language-shell">scp fileLocal root@remoteIp:fileRemote</code></pre>
+                <p>12月最后一个月，明天就是2020年了，回顾2019，感觉成长了许多，2020，希望能继续保持对技术的热情，做自己喜欢做的事，明年，也将毕业啦，从此便是社会人。🏷️</p>
+<h4 id="1-JRebel实现热部署减少重启时间"><a href="#1-JRebel实现热部署减少重启时间" class="headerlink" title="1. JRebel实现热部署减少重启时间"></a>1. JRebel实现热部署减少重启时间</h4><p>平时我们在开发中总是需要不断修改Service层或者其他层的代码，这时候如果项目大的话，重启一次要几十秒，这是十分痛苦的事情，这时候热部署就生效了。<br>这里使用JRebel的热部署，在IDEA中装插件就可以了。破解的话需要半年一次。</p>
+<ol>
+<li>破解可以参考<a href="https://blog.csdn.net/u010004317/article/details/79776592" target="_blank" rel="noopener">这篇文章</a></li>
+<li>然后需要重新生成id，<a href="https://www.guidgen.com/" target="_blank" rel="noopener">在这</a></li>
+<li>然后填写具体路径即可。<a href="http://127.0.0.1:8888/e4188520-e963-484e-ae3d-e42b4b0861ee" target="_blank" rel="noopener">http://127.0.0.1:8888/e4188520-e963-484e-ae3d-e42b4b0861ee</a></li>
+<li>然后在项目中就能用了，直接右键即可。</li>
+</ol>
+<h4 id="2-使用Mybatis-plus自动填充创建时间和修改时间"><a href="#2-使用Mybatis-plus自动填充创建时间和修改时间" class="headerlink" title="2.使用Mybatis-plus自动填充创建时间和修改时间"></a>2.使用Mybatis-plus自动填充创建时间和修改时间</h4><p>创建时间和修改时间都是平时在插入数据或者修改数据时都是要新建或者修改的，不必要每次都去修改，可以使用Mybatis-plus 的自动填充功能。</p>
+<ol>
+<li><p>实现元对象处理器接口：com.baomidou.mybatisplus.core.handlers.<strong>MetaObjectHandler</strong></p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MetaObjectHandlerConfig</span> <span class="token keyword">implements</span> <span class="token class-name">MetaObjectHandler</span> <span class="token punctuation">{</span>
+ <span class="token annotation punctuation">@Override</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">insertFill</span><span class="token punctuation">(</span>MetaObject metaObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+     Object createTime <span class="token operator">=</span> <span class="token function">getFieldValByName</span><span class="token punctuation">(</span><span class="token string">"createdAt"</span><span class="token punctuation">,</span> metaObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     Object updateTime <span class="token operator">=</span> <span class="token function">getFieldValByName</span><span class="token punctuation">(</span><span class="token string">"updatedAt"</span><span class="token punctuation">,</span> metaObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>createTime <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token function">setFieldValByName</span><span class="token punctuation">(</span><span class="token string">"createdAt"</span><span class="token punctuation">,</span> LocalDateTime<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> metaObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>updateTime <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+         <span class="token function">setFieldValByName</span><span class="token punctuation">(</span><span class="token string">"updatedAt"</span><span class="token punctuation">,</span> LocalDateTime<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> metaObject<span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token punctuation">}</span></code></pre>
 </li>
-<li>从服务器上复制文件到本地<pre class=" language-shell"><code class="language-shell">scp root@remoteIp:fileRemote fileLocal</code></pre>
-另外如果设定了别名的话，就是跟ssh那里一样，可以使用别名代替root@remoteIp</li>
+<li><p>注解填充字段 @TableField(fill = FieldFill.INSERT) ！</p>
+<pre class=" language-java"><code class="language-java"> <span class="token annotation punctuation">@TableField</span><span class="token punctuation">(</span>fill <span class="token operator">=</span> FieldFill<span class="token punctuation">.</span>INSERT<span class="token punctuation">)</span>
+ <span class="token keyword">private</span> LocalDateTime createdAt<span class="token punctuation">;</span>
+
+ <span class="token annotation punctuation">@TableField</span><span class="token punctuation">(</span>fill <span class="token operator">=</span> FieldFill<span class="token punctuation">.</span>INSERT_UPDATE<span class="token punctuation">)</span>
+ <span class="token keyword">private</span> LocalDateTime updatedAt<span class="token punctuation">;</span></code></pre>
+</li>
+</ol>
+<ul>
+<li>字段必须声明TableField注解，属性fill选择对应策略，该申明告知 Mybatis-Plus 需要预留注入 SQL 字段。</li>
+<li>填充处理器MyMetaObjectHandler 在 Spring Boot 中需要声明@Component 注入。</li>
+<li>必须使用父类的setFieldValByName()或者setInsertFieldValByName/setUpdateFieldValByName方法，否则不会根据注解FieldFill.xxx来区分。</li>
 </ul>
-<p>上面都是针对单个文件的，如果需要传输整个文件夹的话，需要用<strong>scp -r</strong></p>
-<p>另外使用scp要注意所使用的用户是否具有可读取远程服务器相应文件的权限，如果没有权限，需要chmod 777 一下。</p>
+<h4 id="3-常用注解的学习"><a href="#3-常用注解的学习" class="headerlink" title="3.常用注解的学习"></a>3.常用注解的学习</h4><p><strong>1. @Profile:</strong> 指示一个或多个指定配置文件处于活动状态时,就执行，官方文档解释，这里指定环境为prod生产环境时运行。执行相应内容，输出文字。</p>
+<p><strong>2. @Value</strong> 注解为读取配置文件的内容。</p>
+<pre class=" language-yml"><code class="language-yml">spring:
+  profiles:
+    active: prod</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20191206215900898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>3. @Bean注解</strong><br>Spring的@Bean注解用于告诉方法，产生一个Bean对象，然后这个Bean对象交给Spring管理。产生这个Bean对象的方法Spring只会调用一次，随后这个Spring将会将这个Bean对象放在自己的IOC容器中。</p>
+<p><strong>4. @JsonView和@JsonProperty注解</strong><br>@JsonView可以过滤序列化对象的字段属性，可以使你有选择的序列化对象。一般用的比较多的地方就是在返回的VO或者属性上指定哪些不需要返回，然后在Controller上用@JsonView指定哪个方法用哪个过滤条件，这个还有继承的机制，也可以使用了解下。<br><a href="https://cloud.tencent.com/developer/article/1445341" target="_blank" rel="noopener">JsonView参考</a><br>@JsonProperty的话是定义在属性上，当你需要指定返回的属性跟前端约定的名称不同时，或者前端dto传入参数跟你的bean属性名不同，这个时候就可以在属性上面@JsonProperty注解指定名称。</p>
+<p><strong>5. @JsonInclude注解</strong><br>@JsonInclude(JsonInclude.Include.NON_NULL)作用在类上的话表示如果这个类中的属性如果值为null,则不返回。感觉还是很好用的。<br><strong>6. @EnumVerify注解</strong><br>@EnumVerify注解，可以在DTO入参的时候对参数指定枚举的类型判断，这样就不用在代码中判断啦。</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@EnumVerify</span><span class="token punctuation">(</span>message <span class="token operator">=</span> <span class="token string">"请选择正确的客户类型"</span><span class="token punctuation">,</span> enumClass <span class="token operator">=</span> CustomerType<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> Integer type<span class="token punctuation">;</span></code></pre>
+<ol start="7">
+<li><a href="https://juejin.im/post/5d5fe6de518825164026c267" target="_blank" rel="noopener">自己创建一个Starter</a></li>
+</ol>
+<h4 id="4-Patch请求和Put请求应使用x-www-form-urlencoded方式传递参数"><a href="#4-Patch请求和Put请求应使用x-www-form-urlencoded方式传递参数" class="headerlink" title="4.Patch请求和Put请求应使用x-www-form-urlencoded方式传递参数"></a>4.Patch请求和Put请求应使用x-www-form-urlencoded方式传递参数</h4><p>在使用Patch和put请求时，body中的请求参数方式要改为x-www-form-urlencoded。<br><img src="https://img-blog.csdnimg.cn/20191213132504641.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="5-SQL常用函数"><a href="#5-SQL常用函数" class="headerlink" title="5.SQL常用函数"></a>5.SQL常用函数</h4><ul>
+<li>IFNULL(v1,v2) 函数<br>如果第一个参数 为 NULL，则返回第二个参数的备用值，其实跟CASE WHEN  THEN差不多，只是更加简洁明了了。</li>
+<li>CONCACT 用于将多个字符串连接起来，形成一个单一的字符串。</li>
+<li>CASE WHEN THEN  ELSE THEN END  CASE 表示函数开始，WHEN THEN 表示条件成立后做什么，END 表示函数结束</li>
+</ul>
+<h4 id="6-NotEmpty、-NotBlank、-NotNull"><a href="#6-NotEmpty、-NotBlank、-NotNull" class="headerlink" title="6.@NotEmpty、@NotBlank、@NotNull"></a>6.@NotEmpty、@NotBlank、@NotNull</h4><p>平时我们一般会在DTO的入参上使用validate的注解，这三种算是比较常见的吧。</p>
+<ul>
+<li><p>@NotEmpty 用在集合类上面<br>用@NotEmpty修饰的String类、Collection、Map、数组，是不能为null或者长度为0的(String Collection Map的isEmpty()方法)</p>
+</li>
+<li><p>@NotBlank只用于String,不能为null且trim()之后size&gt;0</p>
+</li>
+<li><p>@NotNull:不能为null，但可以为empty,没有Size的约束</p>
+</li>
+</ul>
+<h4 id="7-Maven依赖范围"><a href="#7-Maven依赖范围" class="headerlink" title="7. Maven依赖范围"></a>7. Maven依赖范围</h4><p> Maven有以下几种依赖范围：</p>
+<ul>
+<li>compile：编译依赖范围，使用此依赖范围对于编译、测试、运行三种classpath都有效，即在编译、测试和运行时都要使用该依赖jar包；</li>
+<li>test：测试依赖范围，只对测试有效，表明只在测试的时候需要，在编译和运行时将无法使用该类依赖，如 junit；</li>
+<li>provided：已提供依赖范围。编译和测试有效，运行无效。如servlet-api，在项目运行时，tomcat等容器已经提供，无需Maven重复引入；</li>
+<li>runtime：运行时依赖范围。测试和运行有效，编译无效。如 jdbc 驱动实现，编译时只需接口，测试或运行时才需要具体的 jdbc 驱动实现；</li>
+<li>system：系统依赖范围，使用system范围的依赖时必须通过systemPath元素显示地指定依赖文件的路径，不依赖Maven仓库解析。</li>
+</ul>
+<h5 id="在默认依赖范围的情况下，传递性依赖也是有条件的。"><a href="#在默认依赖范围的情况下，传递性依赖也是有条件的。" class="headerlink" title="在默认依赖范围的情况下，传递性依赖也是有条件的。"></a>在默认依赖范围的情况下，传递性依赖也是有条件的。</h5><p><img src="https://img-blog.csdnimg.cn/20191224215926745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjk5MzM5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>当第二直接依赖为compile时，则依赖关系以第一直接依赖为准；</li>
+<li>当第二直接依赖为test时，则没有依赖关系；</li>
+<li>当第二直接依赖为provided时，只有第一直接依赖也为provided时才有provided范围的依赖关系；</li>
+<li>当第二直接依赖为runtime时，除了第一直接依赖关系为compile时依赖范围为runtime，其他三种皆与第一直接依赖范围相同。</li>
+</ul>
+<h5 id="依赖冲突的调节："><a href="#依赖冲突的调节：" class="headerlink" title="依赖冲突的调节："></a>依赖冲突的调节：</h5><p>A -&gt; B -&gt; C -&gt; X (1.0)<br>A -&gt; D -&gt; X (2.0)<br>由于只能引入一个版本的包 , 此时 Maven 按照最短路径选择导入 X (2.0)</p>
+<p>A -&gt; B -&gt; X (1.0)<br>A -&gt; D -&gt; X (2.0)<br>路径长度一致 , 则优先选择第一个 , 此时导入 X (1.0)</p>
 
             </div>
             <hr/>
@@ -636,9 +659,9 @@ remoteIp：服务器ip</code></pre><ul>
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《SSH学习》
+                    《2019.12月总结》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/01/05/2019.12-yue-zong-jie/" property="cc:attributionName"
                rel="cc:attributionURL">
                 ForeverSen
             </a> 采用
@@ -678,9 +701,10 @@ remoteIp：服务器ip</code></pre><ul>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/01/05/2019.12-yue-zong-jie/">
                     <div class="card-image">
@@ -699,9 +723,9 @@ remoteIp：服务器ip</code></pre><ul>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -714,6 +738,7 @@ remoteIp：服务器ip</code></pre><ul>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -732,32 +757,33 @@ remoteIp：服务器ip</code></pre><ul>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/01/2019.11-yue-zong-jie/">
+                <a href="/2019/12/16/ssh-mian-mi-deng-lu-fu-wu-qi-ji-ssh-nei-wang-chuan-tou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="2019.11月总结">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="SSH学习">
                         
-                        <span class="card-title">2019.11月总结</span>
+                        <span class="card-title">SSH学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            十一月，很快，已经实习一个多月了，感觉最近写的业务还是挺多的，也学习到了许多东西，平时自己遇到了困难也会在这里总结下，不过这个月偷懒了一把，没利用空余的时间去学习新的技术，不过最近开始看书了😂。
-1. Spring中@RequestPar
+                            SSH真是个强大的工具，可以做到好多东西，最近学习了一点皮毛，总结下：
+1.SSH目录├── authorized_keys        --服务器的已授权秘钥信息
+├── config                          
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category" target="_blank">
-                                    Java
+                            <a href="/categories/计算机基础/" class="post-category" target="_blank">
+                                    计算机基础
                                 </a>
                             
                             
@@ -767,8 +793,8 @@ remoteIp：服务器ip</code></pre><ul>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/" target="_blank">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>

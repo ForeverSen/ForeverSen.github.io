@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://github.com/ForeverSen/ForeverSen.github.io/"/>
-  <updated>2019-12-21T05:59:39.659Z</updated>
+  <updated>2020-03-23T15:57:27.472Z</updated>
   <id>http://github.com/ForeverSen/ForeverSen.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019.12月总结</title>
+    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2020/01/05/2019.12-yue-zong-jie/"/>
+    <id>http://github.com/ForeverSen/ForeverSen.github.io/2020/01/05/2019.12-yue-zong-jie/</id>
+    <published>2020-01-05T10:25:08.000Z</published>
+    <updated>2020-03-23T15:57:27.472Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;12月最后一个月，明天就是2020年了，回顾2019，感觉成长了许多，2020，希望能继续保持对技术的热情，做自己喜欢做的事，明年，也将毕业啦，从此便是社会人。🏷️&lt;/p&gt;
+&lt;h4 id=&quot;1-JRebel实现热部署减少重启时间&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>SSH学习</title>
@@ -556,35 +584,6 @@
     
     
       <category term="Dubbo" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/Dubbo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络知识总结</title>
-    <link href="http://github.com/ForeverSen/ForeverSen.github.io/2019/06/12/ji-suan-ji-wang-luo-xue-xi-bi-ji/"/>
-    <id>http://github.com/ForeverSen/ForeverSen.github.io/2019/06/12/ji-suan-ji-wang-luo-xue-xi-bi-ji/</id>
-    <published>2019-06-12T10:25:08.000Z</published>
-    <updated>2019-09-30T14:11:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿&lt;/p&gt;
-&lt;p&gt;最近这两星期抽空来看看计算机网络相关的知识，虽然大三上学期有学这门课，但是很快就忘了，记忆不是很深，现在再重温一下。&lt;/p&gt;
-&lt;h4 id=&quot;计算机网络概述：&quot;&gt;&lt;a href=&quot;#计算机网络概述：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="计算机基础" scheme="http://github.com/ForeverSen/ForeverSen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="计算机网络" scheme="http://github.com/ForeverSen/ForeverSen.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
